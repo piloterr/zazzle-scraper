@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.zazzle.com/branded_logo_two_tone_coffee_mug-256528848440338952.",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -179,7 +179,7 @@ response = requests.get(
     params={
         "query": "coffee mug. A product URL returns 400.",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
